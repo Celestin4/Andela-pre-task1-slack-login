@@ -1,78 +1,284 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  padding: 5px;
+}
+
 .main {
-    display: flex;
-    width: 100%;
-    height: 100vh;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
+/* Left column */
 .left-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    background: #FFE6C9;
+  width: 55%;
+  background-color: #ffe6c9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-
-
-.left-col img {
-    
-    max-width: 70%;
-    max-height: 80%;
-}
-.left-col h3 {
-    color: #73114B;
-    font-family: Nunito Sans;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-}
-.left-col p {
-    color: #73114B;
-font-family: Nunito Sans;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+.slack-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
+.slack-logo .ilustration {
+  width: 60%;
+}
+
+.ilustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-circle {
+  width: 80%;
+}
+
+.skeleton {
+  max-width: 40%;
+  position: absolute;
+  bottom: -45px;
+}
+
+.small-globe-1 {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 72%;
+  top: 62%;
+}
+
+.small-globe-2 {
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  left: 63%;
+  top: 14%;
+}
+
+.logo-desc {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+.upper-left-globe {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -50px;
+  left: -50px;
+}
+
+.message2 {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  width: 90px;
+}
+
+.message1 {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  width: 90px;
+}
+
+.vector2 {
+  position: absolute;
+  left: 10%;
+  top: 90%;
+  width: 12px;
+}
+
+.wing1 {
+  position: absolute;
+  left: 10%;
+  top: 90%;
+  width: 48px;
+}
+
+.wing2 {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 48px;
+}
+
+.white-wing1 {
+  position: absolute;
+  right: 30%;
+  top: 30%;
+  width: 48px;
+}
+
+.white-wing2 {
+  position: absolute;
+  right: 35%;
+  top: 50%;
+  width: 28px;
+}
+
+/* Right column */
 .right-col {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 45%;
 }
 
-.plus-icon{
-    width: 72px;
-    height: 72px;
-    flex-shrink: 0;
+.blacksphere {
+  width: 6px;
+  height: 6px;
 }
 
-.right-col h2 {
-    color: #525252;
-font-family: Nunito Sans;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.bs-1 {
+  position: absolute;
+  right: 20%;
+  top: 20%;
 }
 
-.right-col p {
-    color: #525252;
-font-family: Nunito Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.bs-2 {
+  position: absolute;
+  left: 20%;
+  top: 20%;
 }
 
+.bs-3 {
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+}
 
+.bs-4 {
+  position: absolute;
+  left: 20%;
+  bottom: 20%;
+}
 
+.bs-5 {
+  position: absolute;
+  left: 20%;
+  bottom: 30%;
+}
+
+.bs-6 {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+}
+
+.right-col-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.cross-icon {
+  padding-bottom: 20px;
+  width: 48px;
+  height: 48px;
+}
+
+.cross-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.fa-btn {
+  margin-top: 40px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ded2d9;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+button {
+  padding: 3px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.rememberme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 12px;
+}
+
+.not-registered {
+  position: absolute;
+  bottom: 20px;
+  font-size: small;
+}
+
+.lower-hemisphere {
+  position: absolute;
+  bottom: 0px;
+  right: -30px;
+  width: 60px;
+  height: 30px;
+}
+
+.login-btn {
+  border-radius: 6px;
+  background: #7f265b;
+  color: #fff;
+}
